@@ -213,6 +213,10 @@ if __name__ == "__main__":
             # TODO
             key_path = find_sign_key(message, signature, dir="key_pairs/")
             
+            key_file_name = os.path.basename(key_path)
+            
+            print("First 5 characters of the key file name:", key_file_name[:5])
+            
             
         elif option == "q":
             break
